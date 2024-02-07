@@ -16,43 +16,43 @@ const regularUser = {
         }
     }
 }
-
+// accessing object of object of object .....
 // console.log(regularUser.fullname.userfullname.firstname);
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
-// const obj3 = { obj1, obj2 }
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+// const obj3 = { obj1, obj2 } // two obj in one
+// const obj3 = Object.assign({}, obj1, obj2, obj4) // one obj
 
-const obj3 = {...obj1, ...obj2}
+// const obj3 = {...obj1, ...obj2} // one obj
 // console.log(obj3);
 
 
 const users = [
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "h1@gmail.com"
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "h2@gmail.com"
     },
     {
         id: 1,
-        email: "h@gmail.com"
+        email: "h3@gmail.com"
     },
 ]
 
-users[1].email
+// console.log(users[1].email)
 // console.log(tinderUser);
 
-// console.log(Object.keys(tinderUser));
-// console.log(Object.values(tinderUser));
-// console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser)); // keys
+// console.log(Object.values(tinderUser)); // values
+// console.log(Object.entries(tinderUser)); // keys and value pairs
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
 
 
 const course = {
@@ -61,12 +61,18 @@ const course = {
     courseInstructor: "hitesh"
 }
 
-// course.courseInstructor
+// console.log(course.courseInstructor); // hitesh
 
-const {courseInstructor: instructor} = course
+// instructor has courseInstructor value
+// directly accessible
 
-// console.log(courseInstructor);
-console.log(instructor);
+// not accessible directly
+console.log(courseInstructor);
+
+// const {courseInstructor: instructor} = course
+
+// directly accessible
+// console.log(instructor);
 
 // {
 //     "name": "hitesh",
@@ -74,9 +80,9 @@ console.log(instructor);
 //     "price": "free"
 // }
 
-[
-    {},
-    {},
-    {}
-]
+// [
+//     {},
+//     {},
+//     {}
+// ]
 

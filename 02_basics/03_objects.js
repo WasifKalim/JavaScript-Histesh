@@ -5,7 +5,6 @@
 
 const mySym = Symbol("key1")
 
-
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
@@ -23,16 +22,17 @@ const JsUser = {
 // console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
-// Object.freeze(JsUser)
+// Object.freeze(JsUser) // do not allow changes
 JsUser.email = "hitesh@microsoft.com"
 // console.log(JsUser);
 
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
+
 JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
-console.log(JsUser.greeting());
-console.log(JsUser.greetingTwo());
+console.log(JsUser.greeting()); // Hello Js user
+console.log(JsUser.greetingTwo()); // Hello Js user, Hetesh

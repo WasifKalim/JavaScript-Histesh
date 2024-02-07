@@ -28,10 +28,13 @@ chai.printMe()
 
 
 /*
+NEW :-
 
 Here's what happens behind the scenes when the new keyword is used:
 
 A new object is created: The new keyword initiates the creation of a new JavaScript object.
+
+new keyword k through constructor call hoga hn JavaScript.
 
 A prototype is linked: The newly created object gets linked to the prototype property of the constructor function. This means that it has access to properties and methods defined on the constructor's prototype.
 
